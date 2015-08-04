@@ -1,0 +1,23 @@
+{
+  "name": "typographic-currency",
+  "version": "1.0.3",
+  "description": "Use the correct symbol of currency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talgautb/typographic-currency.git"
+  },
+  "keywords": [
+    "typographic",
+    "currency"
+  ],
+  "author": "talgautb <gtalk.kz@gmail.com> (http://www.gtalk.kz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/talgautb/typographic-currency/issues"
+  },
+  "homepage": "https://github.com/talgautb/typographic-currency#readme"
+}
