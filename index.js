@@ -7,10 +7,10 @@ export default (input) => {
   for (var key in currencyDB) {
     const currentKey = currencyDB[key];
     // use global and ignore letter case
-    const pattern = new RegExp(key, 'gi');
+    const pattern = new RegExp(`([^a-z]|\\b)(${key})\\b`, 'gi');
 
     let textInput = (text) ? text : input;
-    text = textInput.replace(pattern, currentKey);
+    text = textInput.replace(pattern, `$1${currentKey}`);
   }
 
   return text;
