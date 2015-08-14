@@ -1,6 +1,6 @@
 {
   "name": "typographic-currency",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Use the correct symbol of currency",
   "main": "index.es5.js",
   "scripts": {
