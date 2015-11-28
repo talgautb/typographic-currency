@@ -1,11 +1,11 @@
 {
   "name": "typographic-currency",
-  "version": "0.1.7",
+  "version": "1.0.0",
   "description": "Use the correct symbol of currency",
   "main": "index.es5.js",
   "scripts": {
     "watch": "npm run transpile -- --watch",
-     "coverage": "babel-node ./node_modules/.bin/isparta cover _mocha index.js -- --compilers js:babel-core/register",
+    "coverage": "babel-node ./node_modules/.bin/isparta cover _mocha index.js -- --compilers js:babel-core/register",
     "precoveralls": "npm run coverage",
     "coveralls": "coveralls < coverage/lcov.info",
     "test": "mocha --require babel-core/register",
@@ -28,7 +28,7 @@
   "author": "talgautb <gtalk.kz@gmail.com> (http://gtalk.kz)",
   "maintainers": [
     "talgautb <gtalk.kz@gmail.com> (http://gtalk.kz)",
-     "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com/)"
+    "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com/)"
   ],
   "license": "MIT",
   "bugs": {
