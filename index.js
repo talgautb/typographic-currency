@@ -1,17 +1,10 @@
-import currencyDB from 'typographic-currency-db';
+import db from 'typographic-currency-db';
 
-export default (input) => {
+const pattern = key => new RegExp(`([^a-z]|\\b)(${key})\\b`, 'gi');
 
-  let text = null;
-
-  for (var key in currencyDB) {
-    const currentKey = currencyDB[key];
-    // use global and ignore letter case
-    const pattern = new RegExp(`([^a-z]|\\b)(${key})\\b`, 'gi');
-
-    let textInput = (text) ? text : input;
-    text = textInput.replace(pattern, `$1${currentKey}`);
-  }
-
-  return text;
+export default function typographicCurrency(input) {
+  if (!input) return;
+  return Object.keys(db).reduce((state, key) => {
+    return state.replace(pattern(key), `$1${db[key]}`);
+  }, input);
 };
