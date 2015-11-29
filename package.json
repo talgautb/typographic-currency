@@ -47,6 +47,6 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "typographic-currency-db": "0.0.1"
+    "typographic-currency-db": "1.0.0"
   }
 }
